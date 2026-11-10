@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Inventario({ productos }) {
-  // El filtro es estado local; no reemplaza ni altera el inventario compartido.
   const [categoria, setCategoria] = useState('Todas');
   const categorias = ['Todas', ...new Set(productos.map(p => p.categoria))];
   const productosFiltrados = categoria === 'Todas'

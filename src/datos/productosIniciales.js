@@ -1,4 +1,4 @@
-// Inventario de ejemplo. "Marca propia" es una marca ficticia con fines educativos.
+// inventario demo
 const productosIniciales = [
   { id: '1', nombre: 'Arroz grano largo 1 kg', marca: 'Marca propia', tipo: 'Arroz', categoria: 'Abarrotes', precio: 1590, stock: 20, descripcion: 'Arroz grano largo, formato de un kilo.' },
   { id: '2', nombre: 'Fideos espirales 400 g', marca: 'Marca propia', tipo: 'Pasta', categoria: 'Abarrotes', precio: 1090, stock: 16, descripcion: 'Pasta de trigo, paquete de 400 gramos.' },

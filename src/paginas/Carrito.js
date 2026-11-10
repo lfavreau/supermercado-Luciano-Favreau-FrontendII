@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Carrito({ productos, carrito, aumentarCantidad, disminuirCantidad }) {
-  // Las cantidades del carrito y las existencias proceden del mismo reducer.
   const items = carrito.map(item => ({ ...item, articulo: productos.find(p => p.id === item.id) })).filter(item => item.articulo);
   const totalUnidades = items.reduce((total, item) => total + item.cantidad, 0);
   const totalCompra = items.reduce((total, item) => total + item.cantidad * item.articulo.precio, 0);

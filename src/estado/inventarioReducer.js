@@ -1,6 +1,5 @@
 import productosIniciales from '../datos/productosIniciales';
 
-// El inventario y el carrito se actualizan juntos, para no desincronizar el stock.
 export const estadoInicial = { productos: productosIniciales, carrito: [] };
 
 export const ACCIONES = {
